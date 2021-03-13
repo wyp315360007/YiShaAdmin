@@ -25,7 +25,7 @@
             html += '           <img src="' + _option.context + 'lib/imageupload/1.0/img/add.png" class="add-img">';
             deleteDisplay = 'block';
         }
-        html += '           <input type="file" name="' + inputFileId + '" id="' + inputFileId + '" class="file-image" callback="' + _option.uploadImage + '" context="' + _option.context + '" limit="' + _option.limit + '"  value="" accept="image/jpg,image/jpeg,image/png,image/bmp" />';
+        html += '           <input type="file" name="' + inputFileId + '" id="' + inputFileId + '" class="file-image" callback="' + _option.uploadImage + '" context="' + _option.context + '" multiple limit="' + _option.limit + '"  value="" accept="image/jpg,image/jpeg,image/png,image/bmp" />';
         html += '       </section>';
         html += '   </div>';
         html += '</section>';
@@ -218,4 +218,3 @@
         fn.apply(this, args);
     }
 })(jQuery);
-
